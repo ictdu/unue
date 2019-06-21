@@ -11,12 +11,12 @@ Route::group([
     'middleware' => ['web', config('backpack.base.middleware_key', 'admin')],
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
-	CRUD::resource('room', 'roomCrudController');
-	CRUD::resource('roomtype', 'roomtypeCrudController');
-	CRUD::resource('building', 'buildingCrudController');
-	CRUD::resource('rate', 'rateCrudController');
-	CRUD::resource('board', 'boardCrudController');
-	CRUD::resource('roomrate', 'roomrateCrudController');
+	CRUD::resource('room', 'RoomCrudController');
+	CRUD::resource('roomtype', 'RoomtypeCrudController');
+	CRUD::resource('building', 'RuildingCrudController');
+	CRUD::resource('rate', 'RateCrudController');
+	CRUD::resource('board', 'RoardCrudController');
+	CRUD::resource('roomrate', 'RoomrateCrudController');
 	CRUD::resource('customer', 'CustomerCrudController');
 	CRUD::resource('food', 'FoodCrudController');
 	CRUD::resource('bathroom', 'BathroomCrudController');
